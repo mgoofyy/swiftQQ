@@ -23,6 +23,7 @@ class ViewController: UIViewController {
     var blackCover: UIView!
     
     var centerOfLeftViewAtBeginning: CGPoint!
+    var centerOfRightViewAtBeginning: CGPoint!
     var proportionOfLeftView: CGFloat = 1
     var distanceOfLeftView: CGFloat = 50
 
@@ -46,6 +47,21 @@ class ViewController: UIViewController {
         centerOfLeftViewAtBeginning = leftViewController.view.center
         
         self.view.addSubview(leftViewController.view)
+        
+        
+        // 通过 StoryBoard 取出 LeftViewController
+        rightViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("RightViewController") as! RightViewController
+        if Common.screenWidth > 320 {
+            proportionOfLeftView = Common.screenWidth / 320
+            distanceOfLeftView += (Common.screenWidth - 320) * FullDistance / 2
+        }
+        rightViewController.view.center = CGPointMake(rightViewController.view.center.x - 50, rightViewController.view.center.y)
+        rightViewController.view.transform = CGAffineTransformScale(CGAffineTransformIdentity, 0.8, 0.8)
+        
+        centerOfRightViewAtBeginning = rightViewController.view.center
+
+        self.view.addSubview(rightViewController.view)
+
         
         // 增加黑色遮罩层，实现视差特效
         blackCover = UIView(frame: CGRectOffset(self.view.frame, 0, 0))
@@ -118,6 +134,10 @@ class ViewController: UIViewController {
         let pro = 0.8 + (proportionOfLeftView - 0.8) * trueProportion
         leftViewController.view.center = CGPointMake(centerOfLeftViewAtBeginning.x + distanceOfLeftView * trueProportion, centerOfLeftViewAtBeginning.y - (proportionOfLeftView - 1) * leftViewController.view.frame.height * trueProportion / 2 )
         leftViewController.view.transform = CGAffineTransformScale(CGAffineTransformIdentity, pro, pro)
+        
+        let pro2 = 0.8 + (proportionOfLeftView - 0.8) * trueProportion
+        rightViewController.view.center = CGPointMake(centerOfLeftViewAtBeginning.x + distanceOfLeftView * trueProportion, centerOfRightViewAtBeginning.y - (proportionOfLeftView - 1) * rightViewController.view.frame.height * trueProportion / 2 )
+        rightViewController.view.transform = CGAffineTransformScale(CGAffineTransformIdentity, pro2, pro2)
     }
     
     // 封装三个方法，便于后期调用
@@ -135,20 +155,37 @@ class ViewController: UIViewController {
     }
     // 展示右视图
     func showRight() {
+        println("\(self.view.center)")
+        println("\(FullDistance)")
+        println("\(Proportion)")
         distance = self.view.center.x * -(FullDistance*2 + Proportion - 1)
         doTheAnimate(self.Proportion, showWhat: "right")
+        homeNavigationController.popToRootViewControllerAnimated(true)
     }
     // 执行三种试图展示
     func doTheAnimate(proportion: CGFloat, showWhat: String) {
         UIView.animateWithDuration(0.3, delay: 0, options: UIViewAnimationOptions.CurveEaseInOut, animations: { () -> Void in
+            println("\(self.view.center.y)")
             self.mainView.center = CGPointMake(self.view.center.x + self.distance, self.view.center.y)
             self.mainView.transform = CGAffineTransformScale(CGAffineTransformIdentity, proportion, proportion)
             if showWhat == "left" {
                 self.leftViewController.view.center = CGPointMake(self.centerOfLeftViewAtBeginning.x + self.distanceOfLeftView, self.leftViewController.view.center.y)
                 self.leftViewController.view.transform = CGAffineTransformScale(CGAffineTransformIdentity, self.proportionOfLeftView, self.proportionOfLeftView)
-            }
+                
+            } else if showWhat == "right" {
+                
+                var ll:CGFloat = 0.50
+                if Common.screenWidth > 320 {
+                    ll = 0.55
+                    
+                }
+                    self.rightViewController.view.center = CGPointMake(CGFloat(Common.screenWidth * ll), self.rightViewController.view.center.y)
+                    self.rightViewController.view.transform = CGAffineTransformScale(CGAffineTransformIdentity, self.proportionOfLeftView, self.proportionOfLeftView)
+                }
+            
             self.blackCover.alpha = showWhat == "home" ? 1 : 0
             self.leftViewController.view.alpha = showWhat == "right" ? 0 : 1
+            self.rightViewController.view.alpha = showWhat == "left" ? 0 : 1
             }, completion: nil)
     }
  
