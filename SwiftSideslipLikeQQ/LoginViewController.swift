@@ -38,7 +38,7 @@ class LoginViewController: UIViewController {
         //        let blurView = UIVisualEffectView(effect: blurEffect)
         //        blurView.frame.size = CGSize(width: viewX, height: viewY)
         //        imageLoginBack.addSubview(blurView)
-        logoLoginView.image = UIImage(named: "touxiang.png")
+        logoLoginView.image = UIImage(named: "mytouxiang.png")
         self.view.addSubview(logoLoginView)
         loginUserIdText.text = "xiaoshan@localhost"
         loginUserIdText.background = UIImage(named: "input.png")
@@ -136,6 +136,9 @@ class LoginViewController: UIViewController {
         
         
     }
+    
+    
+    
 
 
 }

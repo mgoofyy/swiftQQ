@@ -10,6 +10,7 @@ import UIKit
 
 class RightViewController: UIViewController,UITableViewDelegate, UITableViewDataSource  {
 
+    var navigationRightButtonItemArray = ["添加好友","添加群","扫一扫","创建群组","查看附近的人","摇一摇","企业群发","我要提建议"]
     var tableView1: UITableView = UITableView()
     //@IBOutlet weak var heightSetting: NSLayoutConstraint!
     override func viewDidLoad() {
@@ -22,7 +23,7 @@ class RightViewController: UIViewController,UITableViewDelegate, UITableViewData
         self.view.backgroundColor = UIColor.clearColor()
         // Do any additional setup after loading the view.
         tableView1.alpha = 0.4
-        tableView1.frame = CGRectMake(Common.screenWidth * 0.22, 0, Common.screenWidth * 0.78, Common.screenHeight)
+        tableView1.frame = CGRectMake(Common.screenWidth * 0.22, 90, Common.screenWidth * 0.78, 440)
         
         self.view.addSubview(tableView1)
         //tableView1.separatorStyle = UITableViewCellSeparatorStyle.SingleLine
@@ -43,7 +44,7 @@ class RightViewController: UIViewController,UITableViewDelegate, UITableViewData
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 20
+        return navigationRightButtonItemArray.count
     }
     
     
@@ -51,7 +52,7 @@ class RightViewController: UIViewController,UITableViewDelegate, UITableViewData
         let cell = tableView.dequeueReusableCellWithIdentifier("cell") as! UITableViewCell
         cell.backgroundColor = UIColor.clearColor()
         //cell.alpha = 0.5
-        cell.textLabel!.text =  "\(indexPath.row)"
+        cell.textLabel!.text =  navigationRightButtonItemArray[indexPath.row]
         
         return cell
     }

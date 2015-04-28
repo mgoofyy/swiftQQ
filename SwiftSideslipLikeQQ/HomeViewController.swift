@@ -179,7 +179,7 @@ class HomeViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         }
         
         //单元格的文本 bear@xiaoboswift.com(5)
-        cell.textLabel?.text = name + "(\(unreads))"
+        cell.textLabel?.text = "华润-赵总" + "(\(unreads))"
         
         
         

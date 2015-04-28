@@ -112,7 +112,7 @@
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="xingxing" translatesAutoresizingMaskIntoConstraints="NO" id="WQb-1g-MzA">
                                 <rect key="frame" x="148" y="97" width="26" height="27"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="fuck you" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UpG-Mn-46R">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="一个有着创新技术的企业才是有未来的企业" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UpG-Mn-46R">
                                 <rect key="frame" x="23" y="134" width="561" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="6f9-Ss-C67"/>
