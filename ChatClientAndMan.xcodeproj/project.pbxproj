@@ -18,6 +18,8 @@
 		4659332B1AD7FB0E00969878 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4659332A1AD7FB0E00969878 /* HomeViewController.swift */; };
 		466C00881AD832D9002ED354 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466C00871AD832D9002ED354 /* Common.swift */; };
 		466C008F1AD92447002ED354 /* LeftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466C008E1AD92447002ED354 /* LeftViewController.swift */; };
+		8058267C1AEF7E5200F4B7F0 /* send.png in Resources */ = {isa = PBXBuildFile; fileRef = 8058267B1AEF7E5200F4B7F0 /* send.png */; };
+		8058267E1AEF812700F4B7F0 /* sendMessage.png in Resources */ = {isa = PBXBuildFile; fileRef = 8058267D1AEF812700F4B7F0 /* sendMessage.png */; };
 		806C09321AEA0F97009927D0 /* loginBack.png in Resources */ = {isa = PBXBuildFile; fileRef = 806C092E1AEA0F97009927D0 /* loginBack.png */; };
 		806C09331AEA0F97009927D0 /* loginBack~.png in Resources */ = {isa = PBXBuildFile; fileRef = 806C092F1AEA0F97009927D0 /* loginBack~.png */; };
 		806C09341AEA0F97009927D0 /* touxiang.png in Resources */ = {isa = PBXBuildFile; fileRef = 806C09301AEA0F97009927D0 /* touxiang.png */; };
@@ -76,6 +78,12 @@
 		807730F01AECC8C50057966A /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 807730EF1AECC8C50057966A /* CoreLocation.framework */; };
 		807730F21AECC8D60057966A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 807730F11AECC8D60057966A /* SystemConfiguration.framework */; };
 		807730F41AECC8E00057966A /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 807730F31AECC8E00057966A /* CoreData.framework */; };
+		807730F71AECCDB50057966A /* ZtDL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807730F61AECCDB50057966A /* ZtDL.swift */; };
+		807730F91AECCDD50057966A /* XxDL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807730F81AECCDD50057966A /* XxDL.swift */; };
+		807730FB1AECCE030057966A /* WXMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807730FA1AECCE030057966A /* WXMessage.swift */; };
+		807730FD1AECD2CA0057966A /* on.png in Resources */ = {isa = PBXBuildFile; fileRef = 807730FC1AECD2CA0057966A /* on.png */; };
+		807730FF1AECD2D30057966A /* off.png in Resources */ = {isa = PBXBuildFile; fileRef = 807730FE1AECD2D30057966A /* off.png */; };
+		80B362831AEF6D8C0089CD47 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80B362821AEF6D8C0089CD47 /* ChatViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -104,6 +112,8 @@
 		4659332A1AD7FB0E00969878 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		466C00871AD832D9002ED354 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		466C008E1AD92447002ED354 /* LeftViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftViewController.swift; sourceTree = "<group>"; };
+		8058267B1AEF7E5200F4B7F0 /* send.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = send.png; sourceTree = "<group>"; };
+		8058267D1AEF812700F4B7F0 /* sendMessage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sendMessage.png; sourceTree = "<group>"; };
 		806C092E1AEA0F97009927D0 /* loginBack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loginBack.png; sourceTree = "<group>"; };
 		806C092F1AEA0F97009927D0 /* loginBack~.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "loginBack~.png"; sourceTree = "<group>"; };
 		806C09301AEA0F97009927D0 /* touxiang.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = touxiang.png; sourceTree = "<group>"; };
@@ -208,6 +218,12 @@
 		807730F11AECC8D60057966A /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		807730F31AECC8E00057966A /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		807730F51AECCAB80057966A /* brightHead.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = brightHead.h; sourceTree = "<group>"; };
+		807730F61AECCDB50057966A /* ZtDL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZtDL.swift; sourceTree = "<group>"; };
+		807730F81AECCDD50057966A /* XxDL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XxDL.swift; sourceTree = "<group>"; };
+		807730FA1AECCE030057966A /* WXMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WXMessage.swift; sourceTree = "<group>"; };
+		807730FC1AECD2CA0057966A /* on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = on.png; sourceTree = "<group>"; };
+		807730FE1AECD2D30057966A /* off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = off.png; sourceTree = "<group>"; };
+		80B362821AEF6D8C0089CD47 /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -271,6 +287,10 @@
 				806C093E1AEA1BCC009927D0 /* RightViewController.swift */,
 				806C09361AEA0FC2009927D0 /* LoginViewController.swift */,
 				4642DDB61ADA7BAA00D0F32B /* OtherPageViewController.swift */,
+				807730F61AECCDB50057966A /* ZtDL.swift */,
+				807730F81AECCDD50057966A /* XxDL.swift */,
+				80B362821AEF6D8C0089CD47 /* ChatViewController.swift */,
+				807730FA1AECCE030057966A /* WXMessage.swift */,
 				4659330E1AD7F60700969878 /* Main.storyboard */,
 				465933111AD7F60700969878 /* Images.xcassets */,
 				465933131AD7F60700969878 /* LaunchScreen.xib */,
@@ -308,6 +328,10 @@
 		806C092D1AEA0F78009927D0 /* image */ = {
 			isa = PBXGroup;
 			children = (
+				8058267D1AEF812700F4B7F0 /* sendMessage.png */,
+				8058267B1AEF7E5200F4B7F0 /* send.png */,
+				807730FE1AECD2D30057966A /* off.png */,
+				807730FC1AECD2CA0057966A /* on.png */,
 				806C093C1AEA1867009927D0 /* mytouxiang.png */,
 				806C093A1AEA17FB009927D0 /* touxiang.jpeg */,
 				806C09381AEA10E2009927D0 /* input.png */,
@@ -676,6 +700,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				807730FD1AECD2CA0057966A /* on.png in Resources */,
+				8058267E1AEF812700F4B7F0 /* sendMessage.png in Resources */,
 				465933101AD7F60700969878 /* Main.storyboard in Resources */,
 				465933151AD7F60700969878 /* LaunchScreen.xib in Resources */,
 				807730DA1AECC62C0057966A /* README.txt in Resources */,
@@ -684,7 +710,9 @@
 				806C093D1AEA1867009927D0 /* mytouxiang.png in Resources */,
 				806C09331AEA0F97009927D0 /* loginBack~.png in Resources */,
 				807730DF1AECC62C0057966A /* build-libidn.sh in Resources */,
+				807730FF1AECD2D30057966A /* off.png in Resources */,
 				806C09391AEA10E2009927D0 /* input.png in Resources */,
+				8058267C1AEF7E5200F4B7F0 /* send.png in Resources */,
 				806C09341AEA0F97009927D0 /* touxiang.png in Resources */,
 				806C09351AEA0F97009927D0 /* touxiang~.png in Resources */,
 				465933121AD7F60700969878 /* Images.xcassets in Resources */,
@@ -715,6 +743,7 @@
 				466C00881AD832D9002ED354 /* Common.swift in Sources */,
 				807730C01AECC62C0057966A /* XMPPXOAuth2Google.m in Sources */,
 				807730D81AECC62C0057966A /* ContextFilterLogFormatter.m in Sources */,
+				807730F71AECCDB50057966A /* ZtDL.swift in Sources */,
 				807730D11AECC62C0057966A /* XMPPStringPrep.m in Sources */,
 				807730CF1AECC62C0057966A /* XMPPIDTracker.m in Sources */,
 				807730BD1AECC62C0057966A /* XMPPPlainAuthentication.m in Sources */,
@@ -722,11 +751,14 @@
 				807730CE1AECC62C0057966A /* RFImageToDataTransformer.m in Sources */,
 				807730B91AECC62C0057966A /* XMPPAnonymousAuthentication.m in Sources */,
 				807730CC1AECC62C0057966A /* DDList.m in Sources */,
+				80B362831AEF6D8C0089CD47 /* ChatViewController.swift in Sources */,
 				807730D31AECC62C0057966A /* DDAbstractDatabaseLogger.m in Sources */,
 				4659330D1AD7F60700969878 /* ViewController.swift in Sources */,
 				807730C91AECC62C0057966A /* XMPPParser.m in Sources */,
+				807730F91AECCDD50057966A /* XxDL.swift in Sources */,
 				807730C51AECC62C0057966A /* XMPPIQ.m in Sources */,
 				807730C21AECC62C0057966A /* NSNumber+XMPP.m in Sources */,
+				807730FB1AECCE030057966A /* WXMessage.swift in Sources */,
 				466C008F1AD92447002ED354 /* LeftViewController.swift in Sources */,
 				807730DD1AECC62C0057966A /* DDXMLElement.m in Sources */,
 				807730C81AECC62C0057966A /* XMPPModule.m in Sources */,

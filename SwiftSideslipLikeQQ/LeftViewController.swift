@@ -10,7 +10,7 @@ import UIKit
 
 class LeftViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    let titlesDictionary = ["人脉", "记事本", "便签", "个性装扮", "我的收藏", "12","设置"]
+    let titlesDictionary = ["我的资料","人脉", "记事本", "便签", "个性装扮", "我的收藏","设置"]
 
     @IBOutlet weak var settingTableView: UITableView!
     @IBOutlet weak var avatarImageView: UIImageView!

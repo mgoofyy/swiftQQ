@@ -49,6 +49,7 @@ class ViewController: UIViewController {
         self.view.addSubview(leftViewController.view)
         
         
+        
         // 通过 StoryBoard 取出 LeftViewController
         rightViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("RightViewController") as! RightViewController
         if Common.screenWidth > 320 {
@@ -73,8 +74,10 @@ class ViewController: UIViewController {
         homeNavigationController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("HomeNavigationController") as! UINavigationController
         homeViewController = homeNavigationController.viewControllers.first as! HomeViewController
         mainView.addSubview(homeViewController.navigationController!.view)
-        mainView.addSubview(homeViewController.view)
+        
         self.view.addSubview(mainView)
+        mainView.addSubview(homeViewController.view)
+        
         
         homeViewController.navigationItem.leftBarButtonItem?.action = Selector("showLeft")
         homeViewController.navigationItem.rightBarButtonItem?.action = Selector("showRight")
@@ -85,8 +88,9 @@ class ViewController: UIViewController {
         mainView.addGestureRecognizer(panGesture)
         
         // 绑定单击收起菜单
-        let tapGesture = UITapGestureRecognizer(target: self, action: "showHome")
-        mainView.addGestureRecognizer(tapGesture)
+//        let tapGesture = UITapGestureRecognizer(target: self, action: "showHome")
+//        mainView.addGestureRecognizer(tapGesture)
+        //self.view.bringSubviewToFront(homeViewController.tableViewToFriendList)
         
     }
 
@@ -165,7 +169,7 @@ class ViewController: UIViewController {
     // 执行三种试图展示
     func doTheAnimate(proportion: CGFloat, showWhat: String) {
         UIView.animateWithDuration(0.3, delay: 0, options: UIViewAnimationOptions.CurveEaseInOut, animations: { () -> Void in
-            println("\(self.view.center.y)")
+            println("+++++++++++++++++\(self.view.center.y)")
             self.mainView.center = CGPointMake(self.view.center.x + self.distance, self.view.center.y)
             self.mainView.transform = CGAffineTransformScale(CGAffineTransformIdentity, proportion, proportion)
             if showWhat == "left" {
