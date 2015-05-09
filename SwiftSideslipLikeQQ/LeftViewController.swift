@@ -37,11 +37,35 @@ class LeftViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        println("12")
+        let userChooseItem = titlesDictionary[indexPath.row]
+        switch userChooseItem {
+        
+        case "我的资料":
+            println("")
+        case "人脉":
+            println("")
+        case "记事本":
+            println("记事本")
+        case "便签":
+            self.dismissViewControllerAnimated(true, completion: nil)
+            self.presentViewController(MemoViewController(), animated: true, completion: nil)
+            println("便签")
+        case "个性装扮":
+            println("个性装扮")
+        case "我的收藏":
+            println("我的收藏")
+        case "设置":
+            println("设置")
+        default :
+            println("error")
+          
+        }
+        
         tableView.deselectRowAtIndexPath(indexPath, animated: false)
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
         return 7
     }
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {

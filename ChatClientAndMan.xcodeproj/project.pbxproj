@@ -20,8 +20,6 @@
 		466C008F1AD92447002ED354 /* LeftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466C008E1AD92447002ED354 /* LeftViewController.swift */; };
 		8058267C1AEF7E5200F4B7F0 /* send.png in Resources */ = {isa = PBXBuildFile; fileRef = 8058267B1AEF7E5200F4B7F0 /* send.png */; };
 		8058267E1AEF812700F4B7F0 /* sendMessage.png in Resources */ = {isa = PBXBuildFile; fileRef = 8058267D1AEF812700F4B7F0 /* sendMessage.png */; };
-		806C09321AEA0F97009927D0 /* loginBack.png in Resources */ = {isa = PBXBuildFile; fileRef = 806C092E1AEA0F97009927D0 /* loginBack.png */; };
-		806C09331AEA0F97009927D0 /* loginBack~.png in Resources */ = {isa = PBXBuildFile; fileRef = 806C092F1AEA0F97009927D0 /* loginBack~.png */; };
 		806C09341AEA0F97009927D0 /* touxiang.png in Resources */ = {isa = PBXBuildFile; fileRef = 806C09301AEA0F97009927D0 /* touxiang.png */; };
 		806C09351AEA0F97009927D0 /* touxiang~.png in Resources */ = {isa = PBXBuildFile; fileRef = 806C09311AEA0F97009927D0 /* touxiang~.png */; };
 		806C09371AEA0FC2009927D0 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806C09361AEA0FC2009927D0 /* LoginViewController.swift */; };
@@ -83,7 +81,52 @@
 		807730FB1AECCE030057966A /* WXMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807730FA1AECCE030057966A /* WXMessage.swift */; };
 		807730FD1AECD2CA0057966A /* on.png in Resources */ = {isa = PBXBuildFile; fileRef = 807730FC1AECD2CA0057966A /* on.png */; };
 		807730FF1AECD2D30057966A /* off.png in Resources */ = {isa = PBXBuildFile; fileRef = 807730FE1AECD2D30057966A /* off.png */; };
+		8088257A1AF610750048B971 /* bg_message_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 808825761AF610750048B971 /* bg_message_logo.png */; };
+		8088257B1AF610750048B971 /* bg_message_number.png in Resources */ = {isa = PBXBuildFile; fileRef = 808825771AF610750048B971 /* bg_message_number.png */; };
+		8088257C1AF610750048B971 /* bt_message_setting1.png in Resources */ = {isa = PBXBuildFile; fileRef = 808825781AF610750048B971 /* bt_message_setting1.png */; };
+		8088257D1AF610750048B971 /* chat2.png in Resources */ = {isa = PBXBuildFile; fileRef = 808825791AF610750048B971 /* chat2.png */; };
+		808825841AF610900048B971 /* bg_setr.png in Resources */ = {isa = PBXBuildFile; fileRef = 8088257F1AF610900048B971 /* bg_setr.png */; };
+		808825851AF610900048B971 /* bg_setr_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 808825801AF610900048B971 /* bg_setr_logo.png */; };
+		808825861AF610900048B971 /* bt_setr_settime.png in Resources */ = {isa = PBXBuildFile; fileRef = 808825811AF610900048B971 /* bt_setr_settime.png */; };
+		808825871AF610900048B971 /* bt_setr_submit.png in Resources */ = {isa = PBXBuildFile; fileRef = 808825821AF610900048B971 /* bt_setr_submit.png */; };
+		808825881AF610900048B971 /* …Ë÷√»’≥Ã±Ì1.png in Resources */ = {isa = PBXBuildFile; fileRef = 808825831AF610900048B971 /* …Ë÷√»’≥Ã±Ì1.png */; };
+		8088258A1AF618180048B971 /* AddMemoViewcontgrollerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808825891AF618180048B971 /* AddMemoViewcontgrollerViewController.swift */; };
 		80B362831AEF6D8C0089CD47 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80B362821AEF6D8C0089CD47 /* ChatViewController.swift */; };
+		80D759821AF71F8E006526A3 /* bg_set.png in Resources */ = {isa = PBXBuildFile; fileRef = 80D7597C1AF71F8E006526A3 /* bg_set.png */; };
+		80D759831AF71F8E006526A3 /* bt_hour.png in Resources */ = {isa = PBXBuildFile; fileRef = 80D7597D1AF71F8E006526A3 /* bt_hour.png */; };
+		80D759841AF71F8E006526A3 /* bt_mon.png in Resources */ = {isa = PBXBuildFile; fileRef = 80D7597E1AF71F8E006526A3 /* bt_mon.png */; };
+		80D759851AF71F8E006526A3 /* bt_set_submit.png in Resources */ = {isa = PBXBuildFile; fileRef = 80D7597F1AF71F8E006526A3 /* bt_set_submit.png */; };
+		80D759861AF71F8E006526A3 /* bt_set_year.png in Resources */ = {isa = PBXBuildFile; fileRef = 80D759801AF71F8E006526A3 /* bt_set_year.png */; };
+		80D759871AF71F8E006526A3 /* …Ë÷√Ã·–— ±º‰1.png in Resources */ = {isa = PBXBuildFile; fileRef = 80D759811AF71F8E006526A3 /* …Ë÷√Ã·–— ±º‰1.png */; };
+		80F5E0531AF363F00005DE90 /* loginBack.png in Resources */ = {isa = PBXBuildFile; fileRef = 80F5E0521AF363F00005DE90 /* loginBack.png */; };
+		80F5E05B1AF3644D0005DE90 /* bg_login.png in Resources */ = {isa = PBXBuildFile; fileRef = 80F5E0551AF3644D0005DE90 /* bg_login.png */; };
+		80F5E05C1AF3644D0005DE90 /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 80F5E0561AF3644D0005DE90 /* bg.png */; };
+		80F5E05D1AF3644D0005DE90 /* bt_login.png in Resources */ = {isa = PBXBuildFile; fileRef = 80F5E0571AF3644D0005DE90 /* bt_login.png */; };
+		80F5E05E1AF3644D0005DE90 /* bt_signin.png in Resources */ = {isa = PBXBuildFile; fileRef = 80F5E0581AF3644D0005DE90 /* bt_signin.png */; };
+		80F5E05F1AF3644D0005DE90 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 80F5E0591AF3644D0005DE90 /* logo.png */; };
+		80F5E0601AF3644D0005DE90 /* µ«¬º.png in Resources */ = {isa = PBXBuildFile; fileRef = 80F5E05A1AF3644D0005DE90 /* µ«¬º.png */; };
+		80F5E06C1AF373DF0005DE90 /* bg_messagebox_me.png in Resources */ = {isa = PBXBuildFile; fileRef = 80F5E0621AF373DF0005DE90 /* bg_messagebox_me.png */; };
+		80F5E06D1AF373DF0005DE90 /* bg_messagebox_others.png in Resources */ = {isa = PBXBuildFile; fileRef = 80F5E0631AF373DF0005DE90 /* bg_messagebox_others.png */; };
+		80F5E06E1AF373DF0005DE90 /* bt_addpeople.png in Resources */ = {isa = PBXBuildFile; fileRef = 80F5E0641AF373DF0005DE90 /* bt_addpeople.png */; };
+		80F5E06F1AF373DF0005DE90 /* bt_addst.png in Resources */ = {isa = PBXBuildFile; fileRef = 80F5E0651AF373DF0005DE90 /* bt_addst.png */; };
+		80F5E0701AF373DF0005DE90 /* bt_message_more.png in Resources */ = {isa = PBXBuildFile; fileRef = 80F5E0661AF373DF0005DE90 /* bt_message_more.png */; };
+		80F5E0711AF373DF0005DE90 /* bt_message_sent.png in Resources */ = {isa = PBXBuildFile; fileRef = 80F5E0671AF373DF0005DE90 /* bt_message_sent.png */; };
+		80F5E0721AF373DF0005DE90 /* bt_message_watched.png in Resources */ = {isa = PBXBuildFile; fileRef = 80F5E0681AF373DF0005DE90 /* bt_message_watched.png */; };
+		80F5E0731AF373DF0005DE90 /* bt_time.png in Resources */ = {isa = PBXBuildFile; fileRef = 80F5E0691AF373DF0005DE90 /* bt_time.png */; };
+		80F5E0741AF373DF0005DE90 /* chatting1.png in Resources */ = {isa = PBXBuildFile; fileRef = 80F5E06A1AF373DF0005DE90 /* chatting1.png */; };
+		80F5E0751AF373DF0005DE90 /* setting.png in Resources */ = {isa = PBXBuildFile; fileRef = 80F5E06B1AF373DF0005DE90 /* setting.png */; };
+		80F5E0771AF3759D0005DE90 /* chatBack.png in Resources */ = {isa = PBXBuildFile; fileRef = 80F5E0761AF3759D0005DE90 /* chatBack.png */; };
+		80F5E0791AF3AF480005DE90 /* SignInNewUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F5E0781AF3AF480005DE90 /* SignInNewUserViewController.swift */; };
+		80F5E07B1AF3B2F60005DE90 /* MemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F5E07A1AF3B2F60005DE90 /* MemoViewController.swift */; };
+		80F5E0861AF3D4F00005DE90 /* bg_r_blue.png in Resources */ = {isa = PBXBuildFile; fileRef = 80F5E07F1AF3D4F00005DE90 /* bg_r_blue.png */; };
+		80F5E0871AF3D4F00005DE90 /* bg_r_default.png in Resources */ = {isa = PBXBuildFile; fileRef = 80F5E0801AF3D4F00005DE90 /* bg_r_default.png */; };
+		80F5E0881AF3D4F00005DE90 /* bg_r_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 80F5E0811AF3D4F00005DE90 /* bg_r_logo.png */; };
+		80F5E0891AF3D4F00005DE90 /* bg_r_pink.png in Resources */ = {isa = PBXBuildFile; fileRef = 80F5E0821AF3D4F00005DE90 /* bg_r_pink.png */; };
+		80F5E08A1AF3D4F00005DE90 /* bg_r_topbar.png in Resources */ = {isa = PBXBuildFile; fileRef = 80F5E0831AF3D4F00005DE90 /* bg_r_topbar.png */; };
+		80F5E08B1AF3D4F00005DE90 /* bg_r_yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = 80F5E0841AF3D4F00005DE90 /* bg_r_yellow.png */; };
+		80F5E08C1AF3D4F00005DE90 /* »’≥Ã±Ì1.png in Resources */ = {isa = PBXBuildFile; fileRef = 80F5E0851AF3D4F00005DE90 /* »’≥Ã±Ì1.png */; };
+		80F5E08E1AF3E6B90005DE90 /* line.png in Resources */ = {isa = PBXBuildFile; fileRef = 80F5E08D1AF3E6B90005DE90 /* line.png */; };
+		80F5E0901AF3E8590005DE90 /* DrawViewLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F5E08F1AF3E8590005DE90 /* DrawViewLine.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -114,8 +157,6 @@
 		466C008E1AD92447002ED354 /* LeftViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftViewController.swift; sourceTree = "<group>"; };
 		8058267B1AEF7E5200F4B7F0 /* send.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = send.png; sourceTree = "<group>"; };
 		8058267D1AEF812700F4B7F0 /* sendMessage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sendMessage.png; sourceTree = "<group>"; };
-		806C092E1AEA0F97009927D0 /* loginBack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loginBack.png; sourceTree = "<group>"; };
-		806C092F1AEA0F97009927D0 /* loginBack~.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "loginBack~.png"; sourceTree = "<group>"; };
 		806C09301AEA0F97009927D0 /* touxiang.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = touxiang.png; sourceTree = "<group>"; };
 		806C09311AEA0F97009927D0 /* touxiang~.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "touxiang~.png"; sourceTree = "<group>"; };
 		806C09361AEA0FC2009927D0 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -223,7 +264,52 @@
 		807730FA1AECCE030057966A /* WXMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WXMessage.swift; sourceTree = "<group>"; };
 		807730FC1AECD2CA0057966A /* on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = on.png; sourceTree = "<group>"; };
 		807730FE1AECD2D30057966A /* off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = off.png; sourceTree = "<group>"; };
+		808825761AF610750048B971 /* bg_message_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg_message_logo.png; sourceTree = "<group>"; };
+		808825771AF610750048B971 /* bg_message_number.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg_message_number.png; sourceTree = "<group>"; };
+		808825781AF610750048B971 /* bt_message_setting1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bt_message_setting1.png; sourceTree = "<group>"; };
+		808825791AF610750048B971 /* chat2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chat2.png; sourceTree = "<group>"; };
+		8088257F1AF610900048B971 /* bg_setr.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg_setr.png; sourceTree = "<group>"; };
+		808825801AF610900048B971 /* bg_setr_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg_setr_logo.png; sourceTree = "<group>"; };
+		808825811AF610900048B971 /* bt_setr_settime.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bt_setr_settime.png; sourceTree = "<group>"; };
+		808825821AF610900048B971 /* bt_setr_submit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bt_setr_submit.png; sourceTree = "<group>"; };
+		808825831AF610900048B971 /* …Ë÷√»’≥Ã±Ì1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "…Ë÷√»’≥Ã±Ì1.png"; sourceTree = "<group>"; };
+		808825891AF618180048B971 /* AddMemoViewcontgrollerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddMemoViewcontgrollerViewController.swift; sourceTree = "<group>"; };
 		80B362821AEF6D8C0089CD47 /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		80D7597C1AF71F8E006526A3 /* bg_set.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg_set.png; sourceTree = "<group>"; };
+		80D7597D1AF71F8E006526A3 /* bt_hour.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bt_hour.png; sourceTree = "<group>"; };
+		80D7597E1AF71F8E006526A3 /* bt_mon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bt_mon.png; sourceTree = "<group>"; };
+		80D7597F1AF71F8E006526A3 /* bt_set_submit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bt_set_submit.png; sourceTree = "<group>"; };
+		80D759801AF71F8E006526A3 /* bt_set_year.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bt_set_year.png; sourceTree = "<group>"; };
+		80D759811AF71F8E006526A3 /* …Ë÷√Ã·–— ±º‰1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "…Ë÷√Ã·–— ±º‰1.png"; sourceTree = "<group>"; };
+		80F5E0521AF363F00005DE90 /* loginBack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loginBack.png; sourceTree = "<group>"; };
+		80F5E0551AF3644D0005DE90 /* bg_login.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg_login.png; sourceTree = "<group>"; };
+		80F5E0561AF3644D0005DE90 /* bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg.png; sourceTree = "<group>"; };
+		80F5E0571AF3644D0005DE90 /* bt_login.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bt_login.png; sourceTree = "<group>"; };
+		80F5E0581AF3644D0005DE90 /* bt_signin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bt_signin.png; sourceTree = "<group>"; };
+		80F5E0591AF3644D0005DE90 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		80F5E05A1AF3644D0005DE90 /* µ«¬º.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "µ«¬º.png"; sourceTree = "<group>"; };
+		80F5E0621AF373DF0005DE90 /* bg_messagebox_me.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg_messagebox_me.png; sourceTree = "<group>"; };
+		80F5E0631AF373DF0005DE90 /* bg_messagebox_others.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg_messagebox_others.png; sourceTree = "<group>"; };
+		80F5E0641AF373DF0005DE90 /* bt_addpeople.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bt_addpeople.png; sourceTree = "<group>"; };
+		80F5E0651AF373DF0005DE90 /* bt_addst.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bt_addst.png; sourceTree = "<group>"; };
+		80F5E0661AF373DF0005DE90 /* bt_message_more.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bt_message_more.png; sourceTree = "<group>"; };
+		80F5E0671AF373DF0005DE90 /* bt_message_sent.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bt_message_sent.png; sourceTree = "<group>"; };
+		80F5E0681AF373DF0005DE90 /* bt_message_watched.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bt_message_watched.png; sourceTree = "<group>"; };
+		80F5E0691AF373DF0005DE90 /* bt_time.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bt_time.png; sourceTree = "<group>"; };
+		80F5E06A1AF373DF0005DE90 /* chatting1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chatting1.png; sourceTree = "<group>"; };
+		80F5E06B1AF373DF0005DE90 /* setting.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = setting.png; sourceTree = "<group>"; };
+		80F5E0761AF3759D0005DE90 /* chatBack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chatBack.png; sourceTree = "<group>"; };
+		80F5E0781AF3AF480005DE90 /* SignInNewUserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInNewUserViewController.swift; sourceTree = "<group>"; };
+		80F5E07A1AF3B2F60005DE90 /* MemoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemoViewController.swift; sourceTree = "<group>"; };
+		80F5E07F1AF3D4F00005DE90 /* bg_r_blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg_r_blue.png; sourceTree = "<group>"; };
+		80F5E0801AF3D4F00005DE90 /* bg_r_default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg_r_default.png; sourceTree = "<group>"; };
+		80F5E0811AF3D4F00005DE90 /* bg_r_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg_r_logo.png; sourceTree = "<group>"; };
+		80F5E0821AF3D4F00005DE90 /* bg_r_pink.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg_r_pink.png; sourceTree = "<group>"; };
+		80F5E0831AF3D4F00005DE90 /* bg_r_topbar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg_r_topbar.png; sourceTree = "<group>"; };
+		80F5E0841AF3D4F00005DE90 /* bg_r_yellow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg_r_yellow.png; sourceTree = "<group>"; };
+		80F5E0851AF3D4F00005DE90 /* »’≥Ã±Ì1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "»’≥Ã±Ì1.png"; sourceTree = "<group>"; };
+		80F5E08D1AF3E6B90005DE90 /* line.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = line.png; sourceTree = "<group>"; };
+		80F5E08F1AF3E8590005DE90 /* DrawViewLine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawViewLine.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -283,8 +369,12 @@
 				4659330A1AD7F60700969878 /* AppDelegate.swift */,
 				4659330C1AD7F60700969878 /* ViewController.swift */,
 				4659332A1AD7FB0E00969878 /* HomeViewController.swift */,
+				80F5E07A1AF3B2F60005DE90 /* MemoViewController.swift */,
+				808825891AF618180048B971 /* AddMemoViewcontgrollerViewController.swift */,
+				80F5E08F1AF3E8590005DE90 /* DrawViewLine.swift */,
 				466C008E1AD92447002ED354 /* LeftViewController.swift */,
 				806C093E1AEA1BCC009927D0 /* RightViewController.swift */,
+				80F5E0781AF3AF480005DE90 /* SignInNewUserViewController.swift */,
 				806C09361AEA0FC2009927D0 /* LoginViewController.swift */,
 				4642DDB61ADA7BAA00D0F32B /* OtherPageViewController.swift */,
 				807730F61AECCDB50057966A /* ZtDL.swift */,
@@ -328,6 +418,12 @@
 		806C092D1AEA0F78009927D0 /* image */ = {
 			isa = PBXGroup;
 			children = (
+				80D7597B1AF71F8E006526A3 /* createBian */,
+				8088257E1AF610900048B971 /* addMemo */,
+				808825751AF610750048B971 /* message */,
+				80F5E07E1AF3D4F00005DE90 /* list */,
+				80F5E0611AF373DF0005DE90 /* chatting */,
+				80F5E0541AF364360005DE90 /* login */,
 				8058267D1AEF812700F4B7F0 /* sendMessage.png */,
 				8058267B1AEF7E5200F4B7F0 /* send.png */,
 				807730FE1AECD2D30057966A /* off.png */,
@@ -335,8 +431,7 @@
 				806C093C1AEA1867009927D0 /* mytouxiang.png */,
 				806C093A1AEA17FB009927D0 /* touxiang.jpeg */,
 				806C09381AEA10E2009927D0 /* input.png */,
-				806C092E1AEA0F97009927D0 /* loginBack.png */,
-				806C092F1AEA0F97009927D0 /* loginBack~.png */,
+				80F5E0521AF363F00005DE90 /* loginBack.png */,
 				806C09301AEA0F97009927D0 /* touxiang.png */,
 				806C09311AEA0F97009927D0 /* touxiang~.png */,
 			);
@@ -620,6 +715,88 @@
 			path = ..;
 			sourceTree = "<group>";
 		};
+		808825751AF610750048B971 /* message */ = {
+			isa = PBXGroup;
+			children = (
+				808825761AF610750048B971 /* bg_message_logo.png */,
+				808825771AF610750048B971 /* bg_message_number.png */,
+				808825781AF610750048B971 /* bt_message_setting1.png */,
+				808825791AF610750048B971 /* chat2.png */,
+			);
+			path = message;
+			sourceTree = "<group>";
+		};
+		8088257E1AF610900048B971 /* addMemo */ = {
+			isa = PBXGroup;
+			children = (
+				8088257F1AF610900048B971 /* bg_setr.png */,
+				808825801AF610900048B971 /* bg_setr_logo.png */,
+				808825811AF610900048B971 /* bt_setr_settime.png */,
+				808825821AF610900048B971 /* bt_setr_submit.png */,
+				808825831AF610900048B971 /* …Ë÷√»’≥Ã±Ì1.png */,
+			);
+			path = addMemo;
+			sourceTree = "<group>";
+		};
+		80D7597B1AF71F8E006526A3 /* createBian */ = {
+			isa = PBXGroup;
+			children = (
+				80D7597C1AF71F8E006526A3 /* bg_set.png */,
+				80D7597D1AF71F8E006526A3 /* bt_hour.png */,
+				80D7597E1AF71F8E006526A3 /* bt_mon.png */,
+				80D7597F1AF71F8E006526A3 /* bt_set_submit.png */,
+				80D759801AF71F8E006526A3 /* bt_set_year.png */,
+				80D759811AF71F8E006526A3 /* …Ë÷√Ã·–— ±º‰1.png */,
+			);
+			path = createBian;
+			sourceTree = "<group>";
+		};
+		80F5E0541AF364360005DE90 /* login */ = {
+			isa = PBXGroup;
+			children = (
+				80F5E0551AF3644D0005DE90 /* bg_login.png */,
+				80F5E0561AF3644D0005DE90 /* bg.png */,
+				80F5E0571AF3644D0005DE90 /* bt_login.png */,
+				80F5E0581AF3644D0005DE90 /* bt_signin.png */,
+				80F5E0591AF3644D0005DE90 /* logo.png */,
+				80F5E05A1AF3644D0005DE90 /* µ«¬º.png */,
+			);
+			name = login;
+			sourceTree = "<group>";
+		};
+		80F5E0611AF373DF0005DE90 /* chatting */ = {
+			isa = PBXGroup;
+			children = (
+				80F5E0761AF3759D0005DE90 /* chatBack.png */,
+				80F5E0621AF373DF0005DE90 /* bg_messagebox_me.png */,
+				80F5E0631AF373DF0005DE90 /* bg_messagebox_others.png */,
+				80F5E0641AF373DF0005DE90 /* bt_addpeople.png */,
+				80F5E0651AF373DF0005DE90 /* bt_addst.png */,
+				80F5E0661AF373DF0005DE90 /* bt_message_more.png */,
+				80F5E0671AF373DF0005DE90 /* bt_message_sent.png */,
+				80F5E0681AF373DF0005DE90 /* bt_message_watched.png */,
+				80F5E0691AF373DF0005DE90 /* bt_time.png */,
+				80F5E06A1AF373DF0005DE90 /* chatting1.png */,
+				80F5E06B1AF373DF0005DE90 /* setting.png */,
+			);
+			path = chatting;
+			sourceTree = "<group>";
+		};
+		80F5E07E1AF3D4F00005DE90 /* list */ = {
+			isa = PBXGroup;
+			children = (
+				80F5E08D1AF3E6B90005DE90 /* line.png */,
+				80F5E07F1AF3D4F00005DE90 /* bg_r_blue.png */,
+				80F5E0801AF3D4F00005DE90 /* bg_r_default.png */,
+				80F5E0811AF3D4F00005DE90 /* bg_r_logo.png */,
+				80F5E0821AF3D4F00005DE90 /* bg_r_pink.png */,
+				80F5E0831AF3D4F00005DE90 /* bg_r_topbar.png */,
+				80F5E0841AF3D4F00005DE90 /* bg_r_yellow.png */,
+				80F5E0851AF3D4F00005DE90 /* »’≥Ã±Ì1.png */,
+			);
+			path = list;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -700,21 +877,60 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80F5E05B1AF3644D0005DE90 /* bg_login.png in Resources */,
+				8088257B1AF610750048B971 /* bg_message_number.png in Resources */,
 				807730FD1AECD2CA0057966A /* on.png in Resources */,
+				8088257C1AF610750048B971 /* bt_message_setting1.png in Resources */,
 				8058267E1AEF812700F4B7F0 /* sendMessage.png in Resources */,
+				808825851AF610900048B971 /* bg_setr_logo.png in Resources */,
+				80F5E0531AF363F00005DE90 /* loginBack.png in Resources */,
+				80F5E06C1AF373DF0005DE90 /* bg_messagebox_me.png in Resources */,
+				80F5E0751AF373DF0005DE90 /* setting.png in Resources */,
+				80F5E08C1AF3D4F00005DE90 /* »’≥Ã±Ì1.png in Resources */,
+				80D759851AF71F8E006526A3 /* bt_set_submit.png in Resources */,
+				808825861AF610900048B971 /* bt_setr_settime.png in Resources */,
+				808825871AF610900048B971 /* bt_setr_submit.png in Resources */,
+				80F5E05C1AF3644D0005DE90 /* bg.png in Resources */,
+				80F5E0891AF3D4F00005DE90 /* bg_r_pink.png in Resources */,
+				80F5E05D1AF3644D0005DE90 /* bt_login.png in Resources */,
 				465933101AD7F60700969878 /* Main.storyboard in Resources */,
+				8088257A1AF610750048B971 /* bg_message_logo.png in Resources */,
+				80D759821AF71F8E006526A3 /* bg_set.png in Resources */,
+				80F5E08E1AF3E6B90005DE90 /* line.png in Resources */,
+				80F5E06F1AF373DF0005DE90 /* bt_addst.png in Resources */,
+				80F5E08B1AF3D4F00005DE90 /* bg_r_yellow.png in Resources */,
 				465933151AD7F60700969878 /* LaunchScreen.xib in Resources */,
+				80F5E0861AF3D4F00005DE90 /* bg_r_blue.png in Resources */,
+				80F5E0731AF373DF0005DE90 /* bt_time.png in Resources */,
 				807730DA1AECC62C0057966A /* README.txt in Resources */,
-				806C09321AEA0F97009927D0 /* loginBack.png in Resources */,
 				806C093B1AEA17FB009927D0 /* touxiang.jpeg in Resources */,
+				8088257D1AF610750048B971 /* chat2.png in Resources */,
+				80F5E0741AF373DF0005DE90 /* chatting1.png in Resources */,
 				806C093D1AEA1867009927D0 /* mytouxiang.png in Resources */,
-				806C09331AEA0F97009927D0 /* loginBack~.png in Resources */,
+				80F5E0771AF3759D0005DE90 /* chatBack.png in Resources */,
 				807730DF1AECC62C0057966A /* build-libidn.sh in Resources */,
 				807730FF1AECD2D30057966A /* off.png in Resources */,
+				80D759841AF71F8E006526A3 /* bt_mon.png in Resources */,
 				806C09391AEA10E2009927D0 /* input.png in Resources */,
 				8058267C1AEF7E5200F4B7F0 /* send.png in Resources */,
 				806C09341AEA0F97009927D0 /* touxiang.png in Resources */,
+				80F5E0721AF373DF0005DE90 /* bt_message_watched.png in Resources */,
+				80F5E05F1AF3644D0005DE90 /* logo.png in Resources */,
+				80F5E0871AF3D4F00005DE90 /* bg_r_default.png in Resources */,
+				80D759871AF71F8E006526A3 /* …Ë÷√Ã·–— ±º‰1.png in Resources */,
+				808825881AF610900048B971 /* …Ë÷√»’≥Ã±Ì1.png in Resources */,
+				80F5E06D1AF373DF0005DE90 /* bg_messagebox_others.png in Resources */,
+				80F5E0701AF373DF0005DE90 /* bt_message_more.png in Resources */,
+				80F5E05E1AF3644D0005DE90 /* bt_signin.png in Resources */,
+				80D759831AF71F8E006526A3 /* bt_hour.png in Resources */,
+				80F5E08A1AF3D4F00005DE90 /* bg_r_topbar.png in Resources */,
+				808825841AF610900048B971 /* bg_setr.png in Resources */,
+				80F5E0711AF373DF0005DE90 /* bt_message_sent.png in Resources */,
+				80F5E0881AF3D4F00005DE90 /* bg_r_logo.png in Resources */,
 				806C09351AEA0F97009927D0 /* touxiang~.png in Resources */,
+				80F5E0601AF3644D0005DE90 /* µ«¬º.png in Resources */,
+				80D759861AF71F8E006526A3 /* bt_set_year.png in Resources */,
+				80F5E06E1AF373DF0005DE90 /* bt_addpeople.png in Resources */,
 				465933121AD7F60700969878 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -765,12 +981,16 @@
 				807730D01AECC62C0057966A /* XMPPSRVResolver.m in Sources */,
 				807730D91AECC62C0057966A /* DispatchQueueLogFormatter.m in Sources */,
 				807730D51AECC62C0057966A /* DDFileLogger.m in Sources */,
+				80F5E0901AF3E8590005DE90 /* DrawViewLine.swift in Sources */,
 				806C09371AEA0FC2009927D0 /* LoginViewController.swift in Sources */,
 				807730DB1AECC62C0057966A /* NSString+DDXML.m in Sources */,
 				807730BC1AECC62C0057966A /* XMPPDigestMD5Authentication.m in Sources */,
 				4659330B1AD7F60700969878 /* AppDelegate.swift in Sources */,
+				8088258A1AF618180048B971 /* AddMemoViewcontgrollerViewController.swift in Sources */,
+				80F5E07B1AF3B2F60005DE90 /* MemoViewController.swift in Sources */,
 				4642DDB71ADA7BAA00D0F32B /* OtherPageViewController.swift in Sources */,
 				4659332B1AD7FB0E00969878 /* HomeViewController.swift in Sources */,
+				80F5E0791AF3AF480005DE90 /* SignInNewUserViewController.swift in Sources */,
 				807730D21AECC62C0057966A /* GCDAsyncSocket.m in Sources */,
 				807730DC1AECC62C0057966A /* DDXMLDocument.m in Sources */,
 				807730CB1AECC62C0057966A /* XMPPStream.m in Sources */,

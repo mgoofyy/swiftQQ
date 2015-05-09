@@ -51,7 +51,6 @@ class RightViewController: UIViewController,UITableViewDelegate, UITableViewData
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("cell") as! UITableViewCell
         cell.backgroundColor = UIColor.clearColor()
-        //cell.alpha = 0.5
         cell.textLabel!.text =  navigationRightButtonItemArray[indexPath.row]
         
         return cell

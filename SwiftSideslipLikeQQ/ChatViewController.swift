@@ -22,9 +22,7 @@ class ChatViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         
         //接管消息代理
         zdl().xxdl = self
-
-        
-    backGroundImage.image = UIImage(named: "loginBack.png")
+    backGroundImage.image = UIImage(named: "chatBack.png")
     backGroundImage.frame = self.view.bounds
         self.view.addSubview(backGroundImage)
     
@@ -40,6 +38,7 @@ class ChatViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         tableViewMessInfo.dataSource = self
         tableViewMessInfo.delegate = self
         tableViewMessInfo.frame = CGRectMake(0, 64, self.view.frame.width, self.view.frame.height - 94)
+        
         tableViewMessInfo.separatorColor = UIColor.clearColor()
         tableViewMessInfo.backgroundColor = UIColor.clearColor()
         self.view.addSubview(tableViewMessInfo)
@@ -53,8 +52,8 @@ class ChatViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         //messageInputTextField.addTarget(self, action: "textFieldDidBeginEditing", forControlEvents: <#UIControlEvents#>)
         self.view.addSubview(messageInputTextField.0)
         
-        sendMessage.frame = CGRectMake(self.view.frame.width - 55, self.view.frame.height - 30, 55, 30)
-        var buttonImage = UIImage(named: "sendMessage.png")
+        sendMessage.frame = CGRectMake(self.view.frame.width - 55, self.view.frame.height - 30, 55, 25)
+        var buttonImage = UIImage(named: "bt_message_sent.png")
         
         //sendMessage.imageView = UIImageView(image: buttonImage)
         sendMessage.setImage(buttonImage, forState: UIControlState.Normal)
@@ -78,20 +77,32 @@ class ChatViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         if ( msg.isMe ) {
             //本人所发消息居右,灰色
             cell.textLabel?.textAlignment = .Right
+            let imageMeMessage = UIImage(named: "bg_messagebox_me.png")
+            cell.backgroundView = UIImageView(image: imageMeMessage)
             cell.textLabel?.textColor = UIColor.whiteColor()
             
         } else {
             //好友的消息,橙色
+            let imageOthersMessage = UIImage(named: "bg_messagebox_others.png")
+            cell.backgroundView = UIImageView(image: imageOthersMessage)
             cell.textLabel?.textColor = UIColor.blackColor()
         }
-        
-        
+
         //设定单元格的文本
         cell.textLabel?.text = msg.body
         cell.backgroundColor = UIColor.clearColor()
         cell.selectionStyle = .None
+       
+        
         return cell
     }
+    
+    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        return 50
+    }
+    
+   
+    
     
     func textFieldDidBeginEditing(textField: UITextField) {
         println("开始输入")
@@ -233,5 +244,11 @@ class ChatViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
     {
         println("关于我自的")
     }
+    
+    override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
+        self.messageInputTextField.resignFirstResponder()
+    }
+    
+    
     
     }

@@ -71,6 +71,17 @@
                     <view key="view" contentMode="scaleToFill" id="lDF-LK-YBN">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tabBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QgQ-U0-obX">
+                                <rect key="frame" x="0.0" y="551" width="600" height="49"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <items>
+                                    <tabBarItem systemItem="favorites" id="r5R-61-NqQ"/>
+                                    <tabBarItem title="Item" id="3NN-m8-mvQ"/>
+                                    <tabBarItem systemItem="more" id="toC-Yg-8bs"/>
+                                </items>
+                            </tabBar>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
                         <connections>
@@ -83,13 +94,14 @@
                     </navigationItem>
                     <connections>
                         <outlet property="panGesture" destination="h3g-3R-WGf" id="gPD-qS-fl9"/>
+                        <outlet property="tabarWithItem" destination="QgQ-U0-obX" id="dmj-fN-5rM"/>
                         <segue destination="2Th-xs-mVQ" kind="show" identifier="showOtherPages" id="nbn-IX-pPI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fFg-uQ-OTZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <panGestureRecognizer minimumNumberOfTouches="1" id="h3g-3R-WGf"/>
             </objects>
-            <point key="canvasLocation" x="1740" y="462"/>
+            <point key="canvasLocation" x="1240" y="294"/>
         </scene>
         <!--Left View Controller-->
         <scene sceneID="oCg-Ep-6dM">
@@ -255,7 +267,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kLH-GN-NSd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1076" y="469"/>
+            <point key="canvasLocation" x="1028" y="351"/>
         </scene>
     </scenes>
     <resources>
