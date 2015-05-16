@@ -15,11 +15,6 @@ class RightViewController: UIViewController,UITableViewDelegate, UITableViewData
     //@IBOutlet weak var heightSetting: NSLayoutConstraint!
     override func viewDidLoad() {
         super.viewDidLoad()
-       
-        //tableView1.tableFooterView = UIView()
-        
-       // heightSetting.constant = Common.screenHeight < 500 ? Common.screenHeight * (568 - 221) / 568 : 347
-        //self.view.frame = CGRectMake(Common.screenWidth * 0.22, 32, Common.screenWidth * 0.78, Common.screenHeight)
         self.view.backgroundColor = UIColor.clearColor()
         // Do any additional setup after loading the view.
         tableView1.alpha = 0.4

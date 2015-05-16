@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController,UITabBarDelegate {
     
     var homeNavigationController: UINavigationController!
     var homeViewController: HomeViewController!
@@ -26,7 +26,12 @@ class ViewController: UIViewController {
     var centerOfRightViewAtBeginning: CGPoint!
     var proportionOfLeftView: CGFloat = 1
     var distanceOfLeftView: CGFloat = 50
-
+    
+    var tabBar:UITabBar!
+    var tabs = ["最近联系人","联系人","最近待办"]
+    var contentView:UIView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -86,11 +91,30 @@ class ViewController: UIViewController {
         let panGesture = homeViewController.panGesture
         panGesture.addTarget(self, action: Selector("pan:"))
         mainView.addGestureRecognizer(panGesture)
+       
         
-        // 绑定单击收起菜单
-//        let tapGesture = UITapGestureRecognizer(target: self, action: "showHome")
-//        mainView.addGestureRecognizer(tapGesture)
-        //self.view.bringSubviewToFront(homeViewController.tableViewToFriendList)
+        
+        //在底部创建Tab Bar
+        tabBar = UITabBar(frame:
+            CGRectMake(0,CGRectGetHeight(self.view.bounds)-64,CGRectGetWidth(self.view.bounds),44))
+        var items:[UITabBarItem] = []
+        for tab in self.tabs {
+            var tabItem = UITabBarItem()
+            tabItem.title = tab
+            items.append(tabItem)
+        }
+        //设置Tab Bar的标签页
+        tabBar.setItems(items, animated: true)
+        //本类实现UITabBarDelegate代理，切换标签页时能响应事件
+        tabBar.delegate = self
+        //代码添加到界面上来
+        mainView.addSubview(tabBar);
+        
+        //上方的容器
+        contentView = UIView(frame:
+            CGRectMake(100,164,100,200))
+        
+
         
     }
 
@@ -99,6 +123,28 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    
+    // UITabBarDelegate协议的方法，在用户选择不同的标签页时调用
+    func tabBar(tabBar: UITabBar, didSelectItem item: UITabBarItem!) {
+        //通过tag查询到上方容器的label，并设置为当前选择的标签页的名称
+        //(contentView.viewWithTag(1) as! UILabel).text = item.title
+        if item.title == "最近联系人" {
+            println("最近联系人")
+            contentView.backgroundColor = UIColor.clearColor()
+        } else if item.title == "联系人" {
+            println("联系人")
+            contentView.backgroundColor = UIColor.greenColor()
+            
+        }
+        else {
+            println("else")
+            contentView.backgroundColor = UIColor.redColor()
+        }
+        mainView.addSubview(contentView)
+        println("切换界面")
+    }
+    
+    
     // 响应 UIPanGestureRecognizer 事件
     func pan(recongnizer: UIPanGestureRecognizer) {
         let x = recongnizer.translationInView(self.view).x
@@ -148,6 +194,7 @@ class ViewController: UIViewController {
     
     // 展示左视图
     func showLeft() {
+        
         distance = self.view.center.x * (FullDistance*2 + Proportion - 1)
         doTheAnimate(self.Proportion, showWhat: "left")
         homeNavigationController.popToRootViewControllerAnimated(true)

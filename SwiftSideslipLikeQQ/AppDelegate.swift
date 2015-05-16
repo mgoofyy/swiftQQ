@@ -146,11 +146,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, XMPPStreamDelegate {
         
         //取系统中保存的用户名/密码/服务器地址
         var user = NSUserDefaults.standardUserDefaults().stringForKey("weixinID")
-        user = "xiaoshan@localhost"
         var password = NSUserDefaults.standardUserDefaults().stringForKey("weixinPwd")
-        password = "xiaoshan"
         var server = NSUserDefaults.standardUserDefaults().stringForKey("wxserver")
-        server = "120.24.69.71"
         
         if (user != nil && password != nil) {
             
@@ -197,7 +194,34 @@ class AppDelegate: UIResponder, UIApplicationDelegate, XMPPStreamDelegate {
         
         navigationBarAppearace.tintColor = UIColor.whiteColor()
         navigationBarAppearace.titleTextAttributes = [NSForegroundColorAttributeName:UIColor.whiteColor()]
-         
+        
+        //设置tabBar
+        
+//        let tabBarItem:NSArray = ["最近联系人","联系人","草泥马"]
+//        var controllers = NSMutableArray()
+//        for i in 0...tabBarItem.count-1
+//        {
+//            var nav = UINavigationController(rootViewController: HomeViewController())
+//            self.window!.rootViewController = nav
+//            nav.title = tabBarItem[i] as? String
+//            nav.navigationBar.barStyle = UIBarStyle.Default
+//            controllers.addObject(nav)
+//            
+//        }
+//        var bar = UITabBarController()
+//        bar.viewControllers = controllers as [AnyObject]
+//        bar.customizableViewControllers = controllers as [AnyObject]
+       
+
+//        self.window?.makeKeyAndVisible()
+        
+        
+//        var tab = UITabBarController()
+//        tab.tabBar.barTintColor = UIColor.blackColor()
+//        tab.viewControllers = ["goofy","goo","go3"]
+//        self.window!.rootViewController = tab
+
+        
         return true
     }
 

@@ -15,6 +15,17 @@ class HomeViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
     var imageViewBack = UIImageView()
     var tableViewToFriendList = UITableView()
     
+    
+    var tabBar:UITabBar!
+    //Tab Bar Item的名称数组
+    var tabs = ["公开课","全栈课","设置"]
+    //Tab Bar上方的容器
+    var contentView:UIView!
+    
+    
+    
+    
+    
     var unreadList = [WXMessage]()
     
     //好友状态数组，作为表格的数据源
@@ -28,8 +39,6 @@ class HomeViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
     //选择聊天的好友用户名
     var currentBuddyName = ""
 
-    
-    
     func newMsg(aMsg: WXMessage) {
         
         //如果消息有正文
@@ -56,15 +65,11 @@ class HomeViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         //mystatus.image = UIImage(named: "on")
         
         logged = true
-        
-        
-        
+
         //取用户名
-        //let myID = NSUserDefaults.standardUserDefaults().stringForKey("weixinID")
-        let myID = "xiaoshan@localhost"
-        println("________\(myID)")
+        let myID = NSUserDefaults.standardUserDefaults().stringForKey("weixinID")
         //导航标题改成 "我"的好友
-        self.navigationItem.title = myID + "的好友"
+        self.navigationItem.title = myID! + "的好友"
         
         //通知表格更新数据
         self.tableViewToFriendList.reloadData()
@@ -72,9 +77,6 @@ class HomeViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         
         
     }
-    
-    
-    
     func isOn(zt: Zhuangtai) {
         //逐条查找
         for (index, oldzt) in enumerate(ztList)  {
@@ -111,10 +113,10 @@ class HomeViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         
         
         
-
+        let myID = NSUserDefaults.standardUserDefaults().stringForKey("weixinID")
         let bar = UIButton()
         //bar.buttonType = UIButtonType(rawValue: 12)
-        bar.setTitle("联系人", forState: UIControlState.Normal)
+        bar.setTitle("\(myID!)" + "的好友", forState: UIControlState.Normal)
         bar.addTarget(self, action: "login", forControlEvents: UIControlEvents.TouchDown)
         bar.sizeToFit()
         
@@ -124,7 +126,7 @@ class HomeViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         var viewY = self.view.frame.height
 //        imageViewBack.frame = self.view.bounds
 //        imageViewBack.image = UIImage(named: "loginBack~.png")
-//        self.view.addSubview(imageViewBack)
+        //self.view.addSubview(imageViewBack)
         
         tableViewToFriendList.frame = CGRectMake(0, 0, viewX, viewY)
         tableViewToFriendList.alpha = 0.5
@@ -133,15 +135,9 @@ class HomeViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         tableViewToFriendList.dataSource = self
         tableViewToFriendList.registerClass(UITableViewCell.self, forCellReuseIdentifier: "cell")
         self.view.addSubview(tableViewToFriendList)
-        
-        
-        //取用户名
-        var  myID = NSUserDefaults.standardUserDefaults().stringForKey("weixinID")
-        
-        //取自动登陆
+         //取自动登陆
         var autologin = NSUserDefaults.standardUserDefaults().boolForKey("wxautologin")
         
-        myID = "xiaoshan@localhost"
         autologin = true
         //如果配置了用户名和自动登陆,开始登陆
         if ( myID != nil && autologin ) {
@@ -151,9 +147,12 @@ class HomeViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
             
             
         }
-        
         //接管状态代理
         zdl().ztdl = self
+        
+        
+        
+        
      
     }
 
@@ -182,18 +181,16 @@ class HomeViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
             }
         }
         
-        //单元格的文本 bear@xiaoboswift.com(5)
-        cell.textLabel?.text = "华润-赵总" + "(\(unreads))"
-        
-        
-        
+//        var UserNameWithOutLocalhost = name.componentsSeparatedByString("@")
+        cell.textLabel?.text = "\(name)" + "(\(unreads))"
+
         //根据状态切换单元格的图像
         if online {
 //            viewHeadPortrait.image = UIImage(named: "mytouxiang.png")
 //            viewHeadPortrait.layer.cornerRadius = 10
 //            viewHeadPortrait.clipsToBounds = true
             cell.imageView?.image = UIImage(named: "mytouxiang.png")
-            cell.imageView?.layer.cornerRadius = 22
+            cell.imageView?.layer.cornerRadius = 30
             cell.imageView?.clipsToBounds = true
         } else {
             cell.imageView?.image = UIImage(named: "off")
@@ -223,7 +220,7 @@ class HomeViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         return ztList.count
     }
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        return 44
+        return 60
     }
 
     
@@ -245,10 +242,7 @@ class HomeViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
                 //一旦找到,就不找了,退出循环
                 break
             }
-            
-            
         }
-        
         //通知表格刷新
         self.tableViewToFriendList.reloadData()
         

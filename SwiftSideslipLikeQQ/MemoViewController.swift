@@ -85,14 +85,15 @@ class MemoViewController: UIViewController {
         }
         //创建一个标签
         for i in 0...6 {
-            let morningMemoButton = createMemoUimageView("bg_r_yellow.png", backGroundSize: CGRectMake(Common.screenWidth * CGFloat(i)/7, Common.screenHeight * 1/4, Common.screenWidth * 1/7 - 1, Common.screenHeight * 3/14), MemoTittle: "大爱高飞",tagNum:i)
-          morningMemoButton.addTarget(self, action: "morningMemoAction", forControlEvents: UIControlEvents.TouchDownRepeat)
+            morningMemoButton = createMemoUimageView("bg_r_yellow.png", backGroundSize: CGRectMake(Common.screenWidth * CGFloat(i)/7, Common.screenHeight * 1/4, Common.screenWidth * 1/7 - 1, Common.screenHeight * 3/14), MemoTittle: "事件",tagNum:i)
+        morningMemoButton.addTarget(self, action: "morningMemoAction", forControlEvents: UIControlEvents.TouchDownRepeat)
+        //添加长按事件
+        var morningMemoLongPress = UILongPressGestureRecognizer(target: self, action: "morningMemoLongPressAction")
+        morningMemoButton.addGestureRecognizer(morningMemoLongPress)
         self.view.addSubview(morningMemoButton)
         
         }
-        
-        
-        //        添加手势
+        //添加手势
          var leftSwipe = UISwipeGestureRecognizer(target: self, action: Selector("handleSwipes"))
         var rightSwipe = UISwipeGestureRecognizer(target: self, action: Selector("handleSwipes"))
         leftSwipe.direction = .Left
@@ -122,8 +123,7 @@ class MemoViewController: UIViewController {
     
     func createWeekDayLabel(tagNum:Int,labelString:String) -> UILabel {
         
-        //var label:UILabel = UILabel(frame:CGRectMake(40 * tagNum,180,40,50))
-       //var valueLinshi = CGFloat(tagNum)/8
+
         var label:UILabel = UILabel(frame: CGRectMake(CGFloat(CGFloat(Common.screenWidth - 30) * (CGFloat(tagNum)/6) + 5),Common.screenHeight * 4/34,50,40))
         var i = CGFloat(CGFloat(Common.screenWidth - 30) * CGFloat(tagNum/8))
         //println("\(valueLinshi)")
@@ -137,9 +137,6 @@ class MemoViewController: UIViewController {
     }
     
     func createDateDayLabel(tagNum:Int,labelString:String) -> UILabel {
-        
-        //var label:UILabel = UILabel(frame:CGRectMake(40 * tagNum,180,40,50))
-        //var valueLinshi = CGFloat(tagNum)/8
         var label:UILabel = UILabel(frame: CGRectMake(CGFloat(CGFloat(Common.screenWidth - 30) * (CGFloat(tagNum)/6) + 15),Common.screenHeight * 19/136,40,40))
         var i = CGFloat(CGFloat(Common.screenWidth - 30) * CGFloat(tagNum/8))
         //println("\(valueLinshi)")
@@ -187,10 +184,17 @@ class MemoViewController: UIViewController {
         self.presentViewController(HomeViewController(), animated: true, completion: nil)
         
     }
-   
     
     func morningMemoAction()  {
        self.presentViewController(AddMemoViewcontgrollerViewController(), animated: true, completion: nil)
         
     }
+    
+    //标签长按事件触发
+    func morningMemoLongPressAction()
+    {
+        println("\(morningMemoButton.tag)")
+        println("草泥马，长安我")
+    }
+    
 }
