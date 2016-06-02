@@ -142,7 +142,7 @@ class ChatViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
             //增加属性
             xmlmessage.addAttributeWithName("type", stringValue: "chat")
             xmlmessage.addAttributeWithName("to", stringValue: toBuddyName)
-            xmlmessage.addAttributeWithName("from", stringValue: "xiaoshan@localhost")
+            xmlmessage.addAttributeWithName("from", stringValue: NSUserDefaults.standardUserDefaults().stringForKey("weixinID"))
             
             //构建正文
             var body = DDXMLElement.elementWithName("body") as! DDXMLElement
@@ -176,7 +176,7 @@ class ChatViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
     }
     
     //聊天的好友用户名
-    var toBuddyName = "dashan@localhost"
+    var toBuddyName = "user1@localhost"
     
     //聊天记录
     var msgList = [WXMessage]()
@@ -222,8 +222,8 @@ class ChatViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         //增加属性
         xmlmessage.addAttributeWithName("to", stringValue: toBuddyName)
         println("+++++++++++++++\(toBuddyName)")
-        //xmlmessage.addAttributeWithName("from", stringValue: NSUserDefaults.standardUserDefaults().stringForKey("weixinID"))
-        xmlmessage.addAttributeWithName("from", stringValue: "xiaoshan@localhost")
+        xmlmessage.addAttributeWithName("from", stringValue: NSUserDefaults.standardUserDefaults().stringForKey("weixinID"))
+       // xmlmessage.addAttributeWithName("from", stringValue: "goofy@localhost")
         
         //构建正在输入元素
         var composing = DDXMLElement.elementWithName("composing") as! DDXMLElement

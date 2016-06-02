@@ -41,6 +41,7 @@ class LoginViewController: UIViewController,UITextFieldDelegate {
 //                imageLoginBack.addSubview(blurView)
         
         inputTextBack.image = UIImage(named: "bg_login.png")
+        inputTextBack.alpha = 0.7
         self.view.addSubview(inputTextBack)
         logoLoginView.image = UIImage(named: "logo.png")
         self.view.addSubview(logoLoginView)
@@ -112,30 +113,23 @@ class LoginViewController: UIViewController,UITextFieldDelegate {
     {
         self.dismissViewControllerAnimated(true, completion: nil)
         self.presentViewController(ViewController(), animated: true, completion: nil)
-    }
-    
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
         
+        NSUserDefaults.standardUserDefaults().setObject(loginUserIdText.text + "@localhost", forKey: "weixinID")
+        NSUserDefaults.standardUserDefaults().setObject(passwordIdText.text, forKey: "weixinPwd")
+        NSUserDefaults.standardUserDefaults().setObject("120.24.69.71", forKey: "wxserver")
+        
+        //配置自动登陆
+        //NSUserDefaults.standardUserDefaults().setBool(self.autologinSwitch.on, forKey: "wxautologin")
+        
+        //同步用户配置
+        NSUserDefaults.standardUserDefaults().synchronize()
+        
+        //需要登陆
+        requireLogin = true
+
+    }
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
             if sender as! UIButton == self.loginButton {
-                
-                NSUserDefaults.standardUserDefaults().setObject(loginUserIdText.text, forKey: "weixinID")
-                NSUserDefaults.standardUserDefaults().setObject(passwordIdText.text, forKey: "weixinPwd")
-                NSUserDefaults.standardUserDefaults().setObject("120.24.69.71", forKey: "wxserver")
-                
-                //配置自动登陆
-                //NSUserDefaults.standardUserDefaults().setBool(self.autologinSwitch.on, forKey: "wxautologin")
-                
-                //同步用户配置
-                NSUserDefaults.standardUserDefaults().synchronize()
-                
-                //需要登陆
-                requireLogin = true
-                
             }
     }
     
