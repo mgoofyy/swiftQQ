@@ -9,6 +9,7 @@
 import UIKit
 
 class HomeViewController: UIViewController,UITableViewDelegate,UITableViewDataSource ,ZtDL,XxDL{
+    @IBOutlet weak var tabarWithItem: UITabBar!
     
     var titleOfOtherPages = ""
     var imageViewBack = UIImageView()
@@ -18,6 +19,8 @@ class HomeViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
     
     //好友状态数组，作为表格的数据源
     var ztList = [Zhuangtai]()
+    
+    var viewHeadPortrait = UIImageView()
     
     //已登入
     var logged = false
@@ -119,9 +122,9 @@ class HomeViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
 
         var viewX = self.view.frame.width
         var viewY = self.view.frame.height
-        imageViewBack.frame = self.view.bounds
-        imageViewBack.image = UIImage(named: "loginBack~.png")
-        self.view.addSubview(imageViewBack)
+//        imageViewBack.frame = self.view.bounds
+//        imageViewBack.image = UIImage(named: "loginBack~.png")
+//        self.view.addSubview(imageViewBack)
         
         tableViewToFriendList.frame = CGRectMake(0, 0, viewX, viewY)
         tableViewToFriendList.alpha = 0.5
@@ -151,6 +154,7 @@ class HomeViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         
         //接管状态代理
         zdl().ztdl = self
+     
     }
 
     override func didReceiveMemoryWarning() {
@@ -179,13 +183,18 @@ class HomeViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         }
         
         //单元格的文本 bear@xiaoboswift.com(5)
-        cell.textLabel?.text = name + "(\(unreads))"
+        cell.textLabel?.text = "华润-赵总" + "(\(unreads))"
         
         
         
         //根据状态切换单元格的图像
         if online {
-            cell.imageView?.image = UIImage(named: "on")
+//            viewHeadPortrait.image = UIImage(named: "mytouxiang.png")
+//            viewHeadPortrait.layer.cornerRadius = 10
+//            viewHeadPortrait.clipsToBounds = true
+            cell.imageView?.image = UIImage(named: "mytouxiang.png")
+            cell.imageView?.layer.cornerRadius = 22
+            cell.imageView?.clipsToBounds = true
         } else {
             cell.imageView?.image = UIImage(named: "off")
             
@@ -212,6 +221,9 @@ class HomeViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         println("\(ztList.count)")
         return ztList.count
+    }
+    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        return 44
     }
 
     

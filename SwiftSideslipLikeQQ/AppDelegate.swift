@@ -192,7 +192,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, XMPPStreamDelegate {
         // 改变 navigation bar 的背景色
         var navigationBarAppearace = UINavigationBar.appearance()
         navigationBarAppearace.translucent = false
-        navigationBarAppearace.barTintColor = UIColor(hex: 0x25b6ed)
+        //navigationBarAppearace.barTintColor = UIColor(hex: 0x25b6ed)
+        navigationBarAppearace.barTintColor = UIColor(red: 129/255, green: 224/255, blue: 204/255, alpha: 1)
         
         navigationBarAppearace.tintColor = UIColor.whiteColor()
         navigationBarAppearace.titleTextAttributes = [NSForegroundColorAttributeName:UIColor.whiteColor()]
@@ -219,7 +220,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, XMPPStreamDelegate {
     }
 
     func applicationWillTerminate(application: UIApplication) {
-        // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+        
     }
 
 
